@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* .App {
+  background-color: #fff;
+  color: #000;
+} */
+
+/*GLOBALES*/
+.container {
+  width: min(90%, 60rem);
+  margin: 0 auto;
+}
+.wrapper-light {
+  color: black;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-dark {
+  color: white;
+  background-color: black;
+}
+.cto-light {
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cto-dark {
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*HEADER*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.presentacion h4,
+h2 {
+  margin: 0px;
+}
+.primer-fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5b2b2;
+  height: 400px;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.info button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* column-gap: 4rem; */
+  margin: 2rem auto;
+}
+.card {
+  background-color: #b5b2b2;
+  border: none;
+  border-radius: 5px;
+  width: 255px;
+  margin-top: 2rem;
+}
+.card-info {
+  margin: 0 1rem;
+  /* width: 200px; */
+}
+.card-info p {
+  width: 185px;
+}
+.footer {
+  background-color: #b5b2b2;
+  text-align: center;
+  padding: 1rem;
+}
+.footer p {
+  margin: 0 auto;
 }
